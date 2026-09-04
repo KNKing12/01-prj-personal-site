@@ -2,29 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title> Your favorite Mermacorn</title>
+  <title>Projects</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="linked-page">
   <div class="page-layout">
-    <!-- The profile section takes up the remaining 1/4 on the left. -->
-    <section class="about" id="about">
-      <div class="profile-card">
-        <nav class="profile-links" aria-label="Muva profile links">
-          <a href="about.html">About Muva</a>
-          <a href="goals.html">Goals</a>
-          <a href="projects.html">Projects</a>
-          <a href="brain.html">My Brain</a>
-        </nav>
-        <img class="profile-picture" src="img/Muva Mermacorn.png" alt="Profile picture of Muva Mermacorn">
-        <div class="about-text">
-          <h2>About this site</h2>
-          <p>I will be sharing my thoughts and projects through my Information Technology journey. Buckle up... I'm about to make it a bumpy, yet fun ride! Lol.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- The hero section takes up 3/4 of the screen on the right. -->
+    <a class="home-badge" href="index.html" aria-label="Go to the home page">
+      <img src="img/Muva Mermacorn.png" alt="Muva Mermacorn home icon">
+    </a>
     <main class="owls">
       <div class="hero-toolbar" aria-label="Site controls">
         <button class="icon-button search-toggle" type="button" aria-label="Open site search" aria-expanded="false">
@@ -50,10 +35,17 @@
       </div>
 
       <div class="owls-content">
-        <p class="eyebrow">Welcome to the world of your favorite Mermacorn!</p>
-        <h1>Muva Mermacorn here!</h1>
-        <p class="intro">Come catch some vibes, get a peak inside how my brain works, watch me bring this thing to life and see where this journey takes ALL of us!</p>
-        <a class="button" href="about.html">I will be posting all of my work and updates here even through graduation! Hope you enjoy the ride!</a>
+        <p class="eyebrow">Muva Mermacorn</p>
+        <h1>Projects</h1>
+        <p class="intro">This is the space where ideas turn into projects, experiments, and progress. Every step helps build the bigger picture of my technology journey.</p>
+
+        <p class="intro">Project 1: you're in it, baby! This website is my first project for the Global Accelerator course. I built this website from scratch, and I'm super proud! But I'm not going to take all of the credit, because part of this course is learning how to use AI to help with coding. So, me being me, I'll lay some credit down where it's due to my AI helper, Copilot.</p>
+
+        <p class="intro">As I go through this course and as I complete projects in other classes that I find interesting, I will be posting them here. Stay tuned, and if you follow me on social media, I'll let you know when there's an update... when I remember. Lol.</p>
+
+        <p class="intro">I will also add a comment section here later so that you all can leave feedback, help me make up my mind by voting on things I'm torn on, and drop ideas to help with my projects.</p>
+
+        <p class="intro">I'm excited to show y'all how I get down. Lol. Y'all know I can crush anything I put my mind to when I get it the proper amount of energy. And let me tell you... too much lined up perfectly for this not to get the attention it so very much deserves!!!</p>
       </div>
     </main>
   </div>
@@ -69,7 +61,6 @@
     if (searchToggleButton && searchPanel && searchInput && searchResults) {
       searchToggleButton.addEventListener('click', () => {
         const isHidden = searchPanel.hasAttribute('hidden');
-
         if (isHidden) {
           searchPanel.removeAttribute('hidden');
           searchToggleButton.setAttribute('aria-expanded', 'true');
@@ -176,7 +167,6 @@
     if (menuButton && menuPanel) {
       menuButton.addEventListener('click', () => {
         const isHidden = menuPanel.hasAttribute('hidden');
-
         if (isHidden) {
           menuPanel.removeAttribute('hidden');
           menuButton.setAttribute('aria-expanded', 'true');

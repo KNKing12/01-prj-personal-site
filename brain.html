@@ -2,29 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title> Your favorite Mermacorn</title>
+  <title>My Brain</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="linked-page">
   <div class="page-layout">
-    <!-- The profile section takes up the remaining 1/4 on the left. -->
-    <section class="about" id="about">
-      <div class="profile-card">
-        <nav class="profile-links" aria-label="Muva profile links">
-          <a href="about.html">About Muva</a>
-          <a href="goals.html">Goals</a>
-          <a href="projects.html">Projects</a>
-          <a href="brain.html">My Brain</a>
-        </nav>
-        <img class="profile-picture" src="img/Muva Mermacorn.png" alt="Profile picture of Muva Mermacorn">
-        <div class="about-text">
-          <h2>About this site</h2>
-          <p>I will be sharing my thoughts and projects through my Information Technology journey. Buckle up... I'm about to make it a bumpy, yet fun ride! Lol.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- The hero section takes up 3/4 of the screen on the right. -->
+    <a class="home-badge" href="index.html" aria-label="Go to the home page">
+      <img src="img/Muva Mermacorn.png" alt="Muva Mermacorn home icon">
+    </a>
     <main class="owls">
       <div class="hero-toolbar" aria-label="Site controls">
         <button class="icon-button search-toggle" type="button" aria-label="Open site search" aria-expanded="false">
@@ -50,10 +35,11 @@
       </div>
 
       <div class="owls-content">
-        <p class="eyebrow">Welcome to the world of your favorite Mermacorn!</p>
-        <h1>Muva Mermacorn here!</h1>
-        <p class="intro">Come catch some vibes, get a peak inside how my brain works, watch me bring this thing to life and see where this journey takes ALL of us!</p>
-        <a class="button" href="about.html">I will be posting all of my work and updates here even through graduation! Hope you enjoy the ride!</a>
+        <p class="eyebrow">Muva Mermacorn</p>
+        <h1>My Brain</h1>
+        <p class="intro">This is the place where the ideas, thoughts, and creative sparks live. It is a little messy, a little magical, and full of movement.</p>
+
+        <p class="intro">I will be posting things I find interesting, things that I find funny, and random things that really make no sense at all. This is titled My Brain... so be prepared to see just how wild it works. Lol.</p>
       </div>
     </main>
   </div>
@@ -69,7 +55,6 @@
     if (searchToggleButton && searchPanel && searchInput && searchResults) {
       searchToggleButton.addEventListener('click', () => {
         const isHidden = searchPanel.hasAttribute('hidden');
-
         if (isHidden) {
           searchPanel.removeAttribute('hidden');
           searchToggleButton.setAttribute('aria-expanded', 'true');
@@ -176,7 +161,6 @@
     if (menuButton && menuPanel) {
       menuButton.addEventListener('click', () => {
         const isHidden = menuPanel.hasAttribute('hidden');
-
         if (isHidden) {
           menuPanel.removeAttribute('hidden');
           menuButton.setAttribute('aria-expanded', 'true');

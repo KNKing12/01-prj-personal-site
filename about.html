@@ -2,29 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title> Your favorite Mermacorn</title>
+  <title>About Muva</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="linked-page">
   <div class="page-layout">
-    <!-- The profile section takes up the remaining 1/4 on the left. -->
-    <section class="about" id="about">
-      <div class="profile-card">
-        <nav class="profile-links" aria-label="Muva profile links">
-          <a href="about.html">About Muva</a>
-          <a href="goals.html">Goals</a>
-          <a href="projects.html">Projects</a>
-          <a href="brain.html">My Brain</a>
-        </nav>
-        <img class="profile-picture" src="img/Muva Mermacorn.png" alt="Profile picture of Muva Mermacorn">
-        <div class="about-text">
-          <h2>About this site</h2>
-          <p>I will be sharing my thoughts and projects through my Information Technology journey. Buckle up... I'm about to make it a bumpy, yet fun ride! Lol.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- The hero section takes up 3/4 of the screen on the right. -->
+    <a class="home-badge" href="index.html" aria-label="Go to the home page">
+      <img src="img/Muva Mermacorn.png" alt="Muva Mermacorn home icon">
+    </a>
     <main class="owls">
       <div class="hero-toolbar" aria-label="Site controls">
         <button class="icon-button search-toggle" type="button" aria-label="Open site search" aria-expanded="false">
@@ -50,10 +35,34 @@
       </div>
 
       <div class="owls-content">
-        <p class="eyebrow">Welcome to the world of your favorite Mermacorn!</p>
-        <h1>Muva Mermacorn here!</h1>
-        <p class="intro">Come catch some vibes, get a peak inside how my brain works, watch me bring this thing to life and see where this journey takes ALL of us!</p>
-        <a class="button" href="about.html">I will be posting all of my work and updates here even through graduation! Hope you enjoy the ride!</a>
+        <p class="eyebrow">Muva Mermacorn</p>
+        <h1>About Muva</h1>
+
+        <p class="intro">Hey, hey, hey! It's me.... Nicole. Some of y'all may know me as Nikki. Very few know me by my first name. And I'll leave that for us to know and you to think about.</p>
+
+        <p class="intro">I'm born and raised in Atlanta, GA. And before you start packing your life up to join me in this beautiful city, we've been full for a long time. So you can come visit. But you gotta leave. And don't forget to go while you're leaving! Lol.</p>
+
+        <p class="intro">I am the mother of a teenager (Delilah), the daughter of an aspiring actor who currently does background work (with some feature background roles) (Robbie), and a Bestie, a friend, sister, aunt and TiTi (Godmother) to others.</p>
+
+        <p class="intro">I am currently in school in pursuit of my degree in Information Technology; Cybersecurity. However, this website is a part of my Global Accelerator Course. And BAY-BEH!!!! let me tell you I am EXCITED to work on and show you all my growth!</p>
+
+        <p class="intro">I've gone to school for fashion design and mass communications with a concentration in public relations at the illustrious university by the sea, Savannah State University, and I plan to incorporate all of my knowledge and skills into my work in these projects.</p>
+
+        <p class="intro">Watch as I bring all of my ideas to life with my unique creativeness. Feel free to add comments and suggestions... when I add those sections, y'all can keep that to yourselves for now. I'm only filtering through my thoughts, ideas and comments right now. Lol.</p>
+
+        <p class="intro">Now... I bet you're wondering what a Mermacorn even is. Baby, a Mermacorn is the rare mixed breed of the rare, magically mythical creatures the mermaid and the unicorn. And I am the one and only Muva Mermacorn! Say it with me if you've heard it before... Part mermaid, part unicorn, COMPLETELY awesome! Lol.</p>
+
+        <p class="intro">My favorite animal is the owl. I've paid my favorite ones to follow you around my site with me. You see them? Lol. The barn owl, the long-eared owl and the snow owl. Those are just my top three faves. Why the owl? They are a symbol of wisdom, creatures of the night, and they have more to them than what meets the eye. Sounds familiar, huh? Lol.</p>
+
+        <p class="intro">I dibble and dabble in side hustles, so I do hair and nails. I'm ordained, and soon I'm gonna be able to build websites and apps. If I can learn how to do it myself... I WILL!!!! Lol.</p>
+
+        <p class="intro">I love to aggravate my daughter, and you'll be able to see some of my favorite videos of that on the My Brain page soon enough. I like to cook when food isn't expensive. I might post some of those videos as well. And the universe and I have dark senses of humor, and although the universe doesn't play about me, the universe likes to play with me. But it's all love.</p>
+
+        <p class="intro">I walk through grass barefoot. I love a good creek or river where I can clean my crystals and wash my feet. And I have full and new moon rituals. It's very spiritual and in tune with the universe over here. I also used to be a plant in my past life because five minutes in the sun and my energy has filled up.</p>
+
+        <p class="intro">I'm Big Libra (10/7), Delilah is Little Libra (10/6), and our dog, Leodis Theodore King (we call him Teddy Bear for short) is Fury Libra (10/1). It's a lot of Libra energy over here. IYKYK.</p>
+
+        <p class="intro">Now that you know a lot-a bit about me, click through the pages and see what all I will be offering on my own, built from scratch website!</div><p></p>
       </div>
     </main>
   </div>
@@ -176,7 +185,6 @@
     if (menuButton && menuPanel) {
       menuButton.addEventListener('click', () => {
         const isHidden = menuPanel.hasAttribute('hidden');
-
         if (isHidden) {
           menuPanel.removeAttribute('hidden');
           menuButton.setAttribute('aria-expanded', 'true');

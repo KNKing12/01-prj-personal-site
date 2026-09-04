@@ -2,29 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title> Your favorite Mermacorn</title>
+  <title>Goals</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="linked-page">
   <div class="page-layout">
-    <!-- The profile section takes up the remaining 1/4 on the left. -->
-    <section class="about" id="about">
-      <div class="profile-card">
-        <nav class="profile-links" aria-label="Muva profile links">
-          <a href="about.html">About Muva</a>
-          <a href="goals.html">Goals</a>
-          <a href="projects.html">Projects</a>
-          <a href="brain.html">My Brain</a>
-        </nav>
-        <img class="profile-picture" src="img/Muva Mermacorn.png" alt="Profile picture of Muva Mermacorn">
-        <div class="about-text">
-          <h2>About this site</h2>
-          <p>I will be sharing my thoughts and projects through my Information Technology journey. Buckle up... I'm about to make it a bumpy, yet fun ride! Lol.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- The hero section takes up 3/4 of the screen on the right. -->
+    <a class="home-badge" href="index.html" aria-label="Go to the home page">
+      <img src="img/Muva Mermacorn.png" alt="Muva Mermacorn home icon">
+    </a>
     <main class="owls">
       <div class="hero-toolbar" aria-label="Site controls">
         <button class="icon-button search-toggle" type="button" aria-label="Open site search" aria-expanded="false">
@@ -50,10 +35,21 @@
       </div>
 
       <div class="owls-content">
-        <p class="eyebrow">Welcome to the world of your favorite Mermacorn!</p>
-        <h1>Muva Mermacorn here!</h1>
-        <p class="intro">Come catch some vibes, get a peak inside how my brain works, watch me bring this thing to life and see where this journey takes ALL of us!</p>
-        <a class="button" href="about.html">I will be posting all of my work and updates here even through graduation! Hope you enjoy the ride!</a>
+        <p class="eyebrow">Muva Mermacorn</p>
+        <h1>Goals</h1>
+        <p class="intro">My goals are simple but big: keep learning, keep building, and keep creating work that reflects my growth. I want every step to move me closer to my future.</p>
+
+        <p class="intro">Here's a breakdown of what that is going to look like...</p>
+
+        <p class="intro">Goal one: get a better laptop! Lol. But no... seriously. This Accelerator course alone has a lot of coding, and I need a laptop that will keep up beyond this class.</p>
+
+        <p class="intro">Goal two: make it through the semester one assignment, paper, discussion post, quiz and project at a time.</p>
+
+        <p class="intro">Goal three: maintain a healthy work-life balance while pursuing my academic and professional goals. Cause all work and no play... will lead to a breakdown nobody needs. Lol.</p>
+
+        <p class="intro">Goal four: get through the rest of these semesters and get this degree!!! Holla if you hear me! Lol. The whole point of stressing myself out and losing sleep is to get the degree and find the career that is going to elevate my life, Delilah's life, and the lives of the ones closest to me.</p>
+
+        <p class="intro">Goal five: travel!!! Better career, better pay, better state of mind... nothing left to do but travel!</p>
       </div>
     </main>
   </div>
@@ -69,7 +65,6 @@
     if (searchToggleButton && searchPanel && searchInput && searchResults) {
       searchToggleButton.addEventListener('click', () => {
         const isHidden = searchPanel.hasAttribute('hidden');
-
         if (isHidden) {
           searchPanel.removeAttribute('hidden');
           searchToggleButton.setAttribute('aria-expanded', 'true');
@@ -176,7 +171,6 @@
     if (menuButton && menuPanel) {
       menuButton.addEventListener('click', () => {
         const isHidden = menuPanel.hasAttribute('hidden');
-
         if (isHidden) {
           menuPanel.removeAttribute('hidden');
           menuButton.setAttribute('aria-expanded', 'true');
