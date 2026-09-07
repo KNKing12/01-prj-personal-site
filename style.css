@@ -358,27 +358,96 @@ body {
 	margin-bottom: 0;
 }
 
-@media (max-width: 560px) {
+/* Stack the site sections and give text more room on mobile screens. */
+@media (max-width: 768px) {
 	.page-layout {
 		display: block;
 	}
 
 	.owls,
 	.about {
-		min-height: auto;
 		width: 100%;
+		min-height: auto;
+	}
+
+	.owls {
+		padding: 88px 18px 42px;
+		align-items: flex-start;
+	}
+
+	.linked-page .owls {
+		background-attachment: scroll;
+	}
+
+	.hero-toolbar {
+		top: 18px;
+		right: 18px;
+	}
+
+	.home-badge {
+		top: 18px;
+		left: 18px;
+		width: 48px;
+		height: 48px;
+	}
+
+	.menu-panel {
+		top: 50px;
+		right: 0;
+	}
+
+	.search-panel {
+		top: 74px;
+		right: 18px;
+		left: 18px;
+		width: auto;
+	}
+
+	.owls-content,
+	.linked-page .owls-content {
+		width: 100%;
+		max-width: 100%;
+		max-height: none;
+		overflow-y: visible;
+		padding: 18px 16px 28px;
+		border-radius: 12px;
 	}
 
 	.title-space {
 		height: 2.8rem;
 	}
 
-	.intro {
-		font-size: 1.4rem;
+	.intro,
+	.linked-page .intro {
+		font-size: 1.15rem;
+		line-height: 1.5;
+		margin: 20px auto 28px;
+	}
+
+	.linked-page .intro {
+		text-align: left;
+		text-indent: 1rem;
 	}
 
 	.about {
-		padding-left: 14px;
-		padding-right: 14px;
+		padding: 28px 18px;
+	}
+
+	.profile-card {
+		width: 100%;
+		gap: 14px;
+	}
+
+	.profile-picture {
+		max-width: 170px;
+	}
+
+	.about h2 {
+		font-size: 1.8rem;
+	}
+
+	.about p {
+		font-size: 1rem;
+		line-height: 1.5;
 	}
 }
