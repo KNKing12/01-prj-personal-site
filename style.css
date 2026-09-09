@@ -3,6 +3,13 @@
 	box-sizing: border-box;
 }
 
+/* Keep every image inside its containing element on smaller screens. */
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
 html {
 	scroll-behavior: smooth;
 }
@@ -18,6 +25,10 @@ body {
 	display: flex;
 	min-height: 100vh;
 	width: 100%;
+}
+
+.page-layout > * {
+	min-width: 0;
 }
 
 .sr-only {
@@ -243,7 +254,7 @@ body {
 	background: rgba(15, 12, 18, 0.12);
 	border-radius: 18px;
 	scrollbar-width: thin;
-	scrollbar-color: rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.08);
+	scrollbar-color: #370134 #681d5914;
 }
 
 .linked-page .owls-content::-webkit-scrollbar {
@@ -358,16 +369,25 @@ body {
 	margin-bottom: 0;
 }
 
-/* Stack the site sections and give text more room on mobile screens. */
-@media (max-width: 768px) {
+/* Stack the site sections and give text more room on mobile and small screens. */
+@media (max-width: 1020px) {
 	.page-layout {
-		display: block;
+		display: flex;
+		flex-direction: column;
 	}
 
 	.owls,
 	.about {
 		width: 100%;
 		min-height: auto;
+	}
+
+	.about {
+		order: 1;
+	}
+
+	.owls {
+		order: 2;
 	}
 
 	.owls {
@@ -377,6 +397,8 @@ body {
 
 	.linked-page .owls {
 		background-attachment: scroll;
+		background-position: center 35%;
+		background-size: cover;
 	}
 
 	.hero-toolbar {
@@ -403,14 +425,18 @@ body {
 		width: auto;
 	}
 
-	.owls-content,
-	.linked-page .owls-content {
+	.owls-content {
 		width: 100%;
 		max-width: 100%;
 		max-height: none;
 		overflow-y: visible;
 		padding: 18px 16px 28px;
 		border-radius: 12px;
+	}
+
+	.linked-page .owls-content {
+		max-height: calc(100vh - 130px);
+		overflow-y: auto;
 	}
 
 	.title-space {
@@ -421,7 +447,7 @@ body {
 	.linked-page .intro {
 		font-size: 1.15rem;
 		line-height: 1.5;
-		margin: 20px auto 28px;
+		margin: 16px auto 22px;
 	}
 
 	.linked-page .intro {
@@ -443,11 +469,24 @@ body {
 	}
 
 	.about h2 {
-		font-size: 1.8rem;
+		font-size: 1.5rem;
 	}
 
 	.about p {
 		font-size: 1rem;
 		line-height: 1.5;
+		margin-top: 0;
+	}
+
+	.linked-page h1 {
+		font-size: 1.8rem;
+		margin-bottom: 16px;
+	}
+}
+
+/* Keep the main subject visible on narrow phone screens. */
+@media (max-width: 480px) {
+	.linked-page .owls {
+		background-position: center 28%;
 	}
 }
