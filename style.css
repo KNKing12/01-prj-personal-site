@@ -445,7 +445,7 @@ body {
 
 	.intro,
 	.linked-page .intro {
-		font-size: 1.25rem;
+		font-size: 1.35rem;
 		line-height: 1.6;
 		margin: 16px auto 22px;
 	}
@@ -469,17 +469,17 @@ body {
 	}
 
 	.about h2 {
-		font-size: 1.7rem;
+		font-size: 1.85rem;
 	}
 
 	.about p {
-		font-size: 1.1rem;
+		font-size: 1.2rem;
 		line-height: 1.6;
 		margin-top: 0;
 	}
 
 	.linked-page h1 {
-		font-size: 2rem;
+		font-size: 2.15rem;
 		margin-bottom: 16px;
 	}
 }
